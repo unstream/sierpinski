@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { Sierpinsky } from './sierpinsky/sierpinsky.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    Sierpinsky
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+//  bootstrap: [AppComponent, CanvasComponent]
+  bootstrap: [Sierpinsky]
 })
 export class AppModule { }
