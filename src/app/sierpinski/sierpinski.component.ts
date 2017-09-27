@@ -91,9 +91,8 @@ export class Sierpinski implements AfterViewInit {
     ctx.fillStyle = this.color;
     ctx.clearRect(0, 0, ctx.canvas.clientWidth, ctx.canvas.clientHeight);
     let l = Math.min(ctx.canvas.clientWidth, ctx.canvas.clientWidth);
-    let offset = l * (1 - Sierpinski.SQRT075) / 2;
-    this.recursion(ctx, 0, l - offset, l, 0);
+    //let offset = l * (1 - Sierpinski.SQRT075) / 2;
+    this.recursion(ctx, 0, l * Sierpinski.SQRT075, l, 0);
     ctx.closePath();
   }
 }
-
