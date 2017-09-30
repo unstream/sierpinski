@@ -25,7 +25,7 @@ export class Sierpinski implements AfterViewInit {
   ngAfterViewInit() {
     let canvas = this.myCanvas.nativeElement;
     this.context = canvas.getContext("2d");
-    this.context.translate(0.5, 0.5);
+    //this.context.translate(0.5, -0.5);
     this.draw();
   }
 
