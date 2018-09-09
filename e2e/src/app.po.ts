@@ -6,7 +6,8 @@ export class AppPage {
   }
 
   getIterationInput() {
-    return element(by.id('iterations'));
+//    return element(by.css('iterations'));
+    return element(by.css('app-fractal input'));
     //return element(by.css('app-root h1')).getText();
   }
 }
