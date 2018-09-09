@@ -1,6 +1,6 @@
-import {Component} from "@angular/core";
-import {ViewChild} from "@angular/core";
-import {AfterViewInit} from "@angular/core";
+import {Component} from '@angular/core';
+import {ViewChild} from '@angular/core';
+import {AfterViewInit} from '@angular/core';
 
 //import {HostListener} from "@angular/core";
 
@@ -15,16 +15,16 @@ export class Sierpinski implements AfterViewInit {
   maxIterations: number = 9;
 
   static readonly SQRT075 = Math.sqrt(0.75);
-  color: string = "#ff6b09";
-  color2: string = "#ffad20";
+  color: string = '#ff6b09';
+  color2: string = '#ffad20';
   context: CanvasRenderingContext2D;
 
-  @ViewChild("myCanvas") myCanvas;
+  @ViewChild('myCanvas') myCanvas;
 
 
   ngAfterViewInit() {
     let canvas = this.myCanvas.nativeElement;
-    this.context = canvas.getContext("2d");
+    this.context = canvas.getContext('2d');
     //this.context.translate(0.5, -0.5);
     this.draw();
   }
@@ -62,7 +62,7 @@ export class Sierpinski implements AfterViewInit {
       + i * parseInt(color2.substr(3, 2), 16)));
     let b = Math.floor((j * parseInt(color1.substr(5, 2), 16)
       + i * parseInt(color2.substr(5, 2), 16)));
-    let color: string = "#"
+    let color: string = '#'
       + this.pad(r.toString(16), 2)
       + this.pad(g.toString(16), 2)
       + this.pad(b.toString(16), 2);
@@ -70,8 +70,8 @@ export class Sierpinski implements AfterViewInit {
   }
 
   pad(num, size): string {
-    let s = num + "";
-    while (s.length < size) s = "0" + s;
+    let s = num + '';
+    while (s.length < size) s = '0' + s;
     return s;
   }
 
