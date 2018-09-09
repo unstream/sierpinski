@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { Sierpinski } from './sierpinski/sierpinski.component';
+import { SierpinskiComponent } from './sierpinski/sierpinski.component';
 
 @NgModule({
   declarations: [
-    Sierpinski
+    SierpinskiComponent
   ],
   imports: [
     BrowserModule, FormsModule
   ],
   providers: [],
 //  bootstrap: [AppComponent, CanvasComponent]
-  bootstrap: [Sierpinski]
+  bootstrap: [SierpinskiComponent]
 })
 export class AppModule { }
