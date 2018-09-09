@@ -12,6 +12,7 @@ import { SierpinskiComponent } from './sierpinski/sierpinski.component';
     BrowserModule, FormsModule
   ],
   providers: [],
+
   bootstrap: [SierpinskiComponent]
 })
 export class AppModule { }

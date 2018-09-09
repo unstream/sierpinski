@@ -12,6 +12,7 @@ import {AfterViewInit} from '@angular/core';
 export class SierpinskiComponent implements AfterViewInit {
   static readonly SQRT075 = Math.sqrt(0.75);
 
+
   iterations = 8;
   maxIterations = 9;
   color = '#ff6b09';
